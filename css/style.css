@@ -7,7 +7,6 @@
 body {
 	margin: 0;
 	font-family: 'JosefinSans-VariableFont_wght';
-	background: red;
 }
 
 
@@ -481,6 +480,9 @@ a {
 
 
 @media only screen and (max-width: 600px) {
+	.a_gate .a_logo {
+	    width: 85%;
+	}
 	.a_login_form {
 		margin-top: 10%;
 	}
