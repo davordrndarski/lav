@@ -91,7 +91,8 @@ a {
 .a_gate .a_logo .lav-img {
     max-width: 200px;
     position: relative;
-    bottom: -17px;
+    bottom: -33px;
+    z-index: 5;
 }
 
 .a_login_form {
@@ -307,6 +308,188 @@ a {
 }
 
 
+/* Homepage */
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	padding: 0 50px;
+}
+
+.header_wrap {
+	display: flex;
+}
+
+.main-logo {
+	width: 100px;
+}
+
+header .nav {
+	display: flex;
+}
+
+header .nav a {
+	font-size: 25px;
+	font-family: 'JosefinSans-VariableFont_wght';
+	color: #233d83;
+	padding-left: 50px;
+	padding-top: 25px;
+	display: inline-block;
+}
+
+.home_wrap {
+	background: url(../images/window-background.png);
+	background-size: cover;
+	height: 100vh;
+}
+
+.home_wrap .bottle-c {
+    position: absolute;
+    bottom: 11%;
+    z-index: 6;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.home_wrap .bottle-c img {
+	min-width: 83%;
+    max-width: 83%;
+}
+
+.bottle_wrap-1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.h_wrap_left {
+    width: 40%;
+    padding: 50px 40px 0;
+}
+
+.h_wrap_right {
+	width: 60%;
+	text-align: right;
+}
+
+.h_wrap_right img {
+	width: 85%;
+}
+
+
+.h_wrap_left .a_logo {
+	position: relative;
+	text-align: center;
+}
+
+.h_wrap_left .a_logo .lav-img {
+    max-width: 125px;
+    position: relative;
+    bottom: -28px;
+    z-index: 5;
+}
+
+.h_wrap_left p {
+	font-size: 1.25vw;
+    color: #070f47;
+    line-height: 1.3;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.h_wrap_left .local {
+	background: transparent;
+    border: none;
+    border-bottom: 2px dashed;
+}
+
+
+.bottom_img {
+	position: absolute;
+	bottom: 0;
+}
+
+.bottom_img .lav_social {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bottom_img .lav_social li:first-child a {
+    margin: 0;
+    color: #fff;
+    font-family: 'JosefinSans-VariableFont_wght';
+    font-size: 0.93vw;
+    line-height: 1.7;
+}
+.bottom_img .lav_social li {
+	margin: 0 15px;
+}
+
+
+.enterCode {
+	background: transparent;
+    border: 1px solid #070f47;
+    color: #070f47;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.enterCode::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #070f47;
+  font-family: 'JosefinSans-VariableFont_wght';
+  font-weight: bold;
+}
+.enterCode::-moz-placeholder { /* Firefox 19+ */
+  color: #070f47;
+  font-family: 'JosefinSans-VariableFont_wght';
+  font-weight: bold;
+}
+.enterCode:-ms-input-placeholder { /* IE 10+ */
+  color: #070f47;
+  font-family: 'JosefinSans-VariableFont_wght';
+  font-weight: bold;
+}
+.enterCode:-moz-placeholder { /* Firefox 18- */
+  color: #070f47;
+  font-family: 'JosefinSans-VariableFont_wght';
+  font-weight: bold;
+}
+
+.code_enter {
+	text-align: center;
+}
+
+.code_enter button {
+	background: #233d83;
+    border: 2px solid #233d83;
+    color: #fff;
+    font-size: 1.35vw;
+    padding: 0.52vw 1.82vw;
+    font-family: 'JosefinSans-VariableFont_wght';
+    font-weight: normal;
+    cursor: pointer;
+    margin: 40px 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    margin-top: 20px;
+}
+
+.code_enter button:hover {
+	background: transparent;
+	color: #233d83;
+}
+
+
 /* RESPONSIVE */
 
 @media only screen and (min-width: 1921px) {
@@ -389,6 +572,12 @@ a {
 
 
 @media only screen and (max-width: 1250px) {
+	.a_gate {
+		height: auto;
+	}
+	.a_gate .a_gate_wrap {
+		padding: 0 90px 40px 30px;
+	}
 	.a_gate .a_logo .lav-img {
 	    max-width: 140px;
 	}
@@ -425,9 +614,7 @@ a {
 	.a_gate {
 		background-size: cover;
 	}
-	.a_gate .a_gate_wrap {
-	    padding: 0 90px 0 30px;
-	}
+
 	.bottle-c {
 	    width: 40%;
 	}
@@ -466,7 +653,7 @@ a {
 	}
 	.a_gate .a_gate_wrap {
 	    width: 100%;
-	    padding: 0 20px;
+	    padding: 0 20px 25px;
 	}
 	.bottle_wrap {
 		display: none;
@@ -480,9 +667,6 @@ a {
 
 
 @media only screen and (max-width: 600px) {
-	.a_gate .a_logo {
-	    width: 85%;
-	}
 	.a_login_form {
 		margin-top: 10%;
 	}
